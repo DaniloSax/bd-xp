@@ -1,15 +1,16 @@
 <?php
 
-namespace App\Models;
+namespace App\Modules\User\Domain\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 
-use App\Modules\User\Domain\Models\People;
+use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class User extends Authenticatable
 {
@@ -45,6 +46,14 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    /**
+     * Create a new factory instance for the model.
+     */
+    protected static function newFactory(): Factory
+    {
+        return UserFactory::new();
+    }
 
     public function people(): HasOne
     {
