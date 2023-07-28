@@ -51,6 +51,7 @@ abstract class BaseRepository implements RepositoryContract
         $model = $this->model;
 
         if (count($filters) === 0) {
+
             return $model->paginate($perPage);
         }
 

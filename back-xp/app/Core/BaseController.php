@@ -14,12 +14,17 @@ use Illuminate\Support\Facades\Validator;
 abstract class BaseController implements ControllerContract
 {
     public BaseService $service;
-    public string $resource;
+    public string|JsonResource $resource;
     public ?FormRequest $formRequest = null;
 
     public function index(?Request $request): JsonResponse
     {
         $content = $this->service->index($request->all());
+
+        if ($this->resource) {
+
+            $content = $this->resource::collection($content);
+        }
 
         return response()->json($content, Response::HTTP_OK);
     }
@@ -27,6 +32,11 @@ abstract class BaseController implements ControllerContract
     public function show(string|int $id): JsonResponse
     {
         $content = $this->service->show($id);
+
+        if ($this->resource) {
+
+            $content = new $this->resource($content);
+        }
 
         return response()->json($content, Response::HTTP_OK);
     }
@@ -69,7 +79,6 @@ abstract class BaseController implements ControllerContract
     public function setDependences(string $service, ?string $resource = null, ?string $formRequest = null)
     {
         $isBaseService = is_subclass_of($service, BaseService::class);
-
 
         throw_if(!$isBaseService, NotFoundHttpException::class);
 
