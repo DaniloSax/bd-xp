@@ -23,7 +23,7 @@ abstract class BaseController implements ControllerContract
 
         if ($this->resource) {
 
-            $content = $this->resource::collection($content);
+            $content = $this->resource::collection($content)->response()->getData();
         }
 
         return response()->json($content, Response::HTTP_OK);

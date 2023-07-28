@@ -23,6 +23,8 @@ class People extends BaseModel
         'birthday'
     ];
 
+    protected $with = ['address'];
+
     /**
      * Create a new factory instance for the model.
      */
