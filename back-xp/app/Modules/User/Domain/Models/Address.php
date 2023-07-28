@@ -17,6 +17,7 @@ class Address extends BaseModel
     protected $table = 'adresses';
 
     protected $fillable = [
+        'people_id',
         'street',
         'number',
         'complement',
@@ -24,6 +25,8 @@ class Address extends BaseModel
         'country',
         'state',
         'cep',
+        'addresseable_type',
+        'addresseable_id'
     ];
 
     /**

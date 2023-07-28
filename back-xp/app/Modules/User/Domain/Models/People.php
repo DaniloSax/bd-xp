@@ -17,6 +17,7 @@ class People extends BaseModel
     protected $table = 'peoples';
 
     protected $fillable = [
+        'user_id',
         'name',
         'cpf',
         'rg',
