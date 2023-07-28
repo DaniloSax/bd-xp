@@ -68,4 +68,15 @@ class UserRepository extends BaseRepository
 
         return $updated;
     }
+
+    public function delete(string $id): bool
+    {
+        $model = $this->findById($id);
+
+        foreach ($model->people->address as $key => $address) {
+            $address->delete();
+        }
+
+        return $model->delete();
+    }
 }
