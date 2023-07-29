@@ -7,7 +7,7 @@ a ferramenta é ágil?
 Atlassian Jira. Sim, é uma ferramenta ágil. Inclusive construída para frameworks ágeis com scrum.
 
 3. Você se sente capaz de liderar esta equipe? Por quê? 
-Sim. Tenho experiência e competência técnica. No meu emprego anterior atuei informalmente como leader teach. Entendo que possuo habilidades de liderança. De forma natural e involuntária, ocupo sempre posições de impulsionador e auxiliador da equipe.
+Sim. Tenho experiência e competência técnica. No meu emprego anterior atuei informalmente como tech lead. Entendo que possuo habilidades de liderança. De forma natural e involuntária, ocupo sempre posições de impulsionador e auxiliador da equipe.
 
 4. Se pudesse sugerir uma melhoria, mudança ou oportunidade. O que seria?
 Automatização de atividades repetitivas. Celeridade em processos burocráticos e massantes. Menos telas, mais objetividade e usabilidade em sistemas de software.

@@ -1,7 +1,7 @@
 # Desafio Software Engineer
 
 <p>Desafio Técnico Bemol Digital - XP</p>
-<p>Desenvilvido um CRUD de usuários, cujo o nome do projeto chamei de BD-XP</p>
+<p>Desenvolvidodo um CRUD de usuários, cujo o nome do projeto chamei de BD-XP</p>
 
 ## Tecnologias utilizadas
 
