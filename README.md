@@ -40,6 +40,31 @@ Requer Banco de dados postgres
 
 <ol>
 <li>
+Crie uma base de dados e configure a conexão nas variáveis de ambiente do .env.backup
+<p>
+<ul>
+<li>
+DB_CONNECTION
+</li>
+<li>
+DB_HOST
+</li>
+<li>
+DB_PORT
+</li>
+<li>
+DB_DATABASE
+</li>
+<li>
+DB_USERNAME
+</li>
+<li>
+DB_PASSWORD
+</li>
+</ul>
+</p>
+</li>
+<li>
 Renomeie o .env.backup para .env
 </li>
 <li>
@@ -68,10 +93,9 @@ $ quasar dev
 </li>
 
 <li>
-Certifique-se da variável FRONTEND_URL do .env está conforme a url do front
+Certifique-se da variável FRONTEND_URL do .env está conforme a url do front, para evitar erros de CORS.
 </li>
 </ol>
-
 
 ## Autor
 
@@ -80,8 +104,7 @@ Certifique-se da variável FRONTEND_URL do .env está conforme a url do front
  <br />
  <sub><b>Danilo Veloso</b></sub></a> <a href="https://github.com/DaniloSax" title="Rocketseat">🚀</a>
 
+👋🏽 Aguardo contato!
 
-Feito por Danilo Veloso 👋🏽 Aguardo contato!
-
-[![Linkedin Badge](https://img.shields.io/badge/-Danilo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/danilo-veloso/) 
+[![Linkedin Badge](https://img.shields.io/badge/-Danilo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/danilo-veloso/)
 [![Gmail Badge](https://img.shields.io/badge/-danilovsdanilo@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:danilovsdanilo@gmail.com)](mailto:danilovsdanilo@gmail.com)
