@@ -50,6 +50,10 @@ abstract class BaseRepository implements RepositoryContract
     {
         $model = $this->model;
 
+        if (array_key_exists('page', $filters)) {
+            unset($filters['page']);
+        }
+
         if (count($filters) === 0) {
 
             return $model->paginate($perPage);

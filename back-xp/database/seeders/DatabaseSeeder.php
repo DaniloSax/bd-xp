@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'danilovsdanilo@gmail.com',
         // ]);
 
-        User::factory(10)->has(
+        User::factory(100)->has(
             People::factory()->has(Address::factory())
         )->create();
     }

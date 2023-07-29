@@ -27,7 +27,7 @@ class UserRequest extends FormRequest
     {
         return [
             'name' => ['required'],
-            'email' => ['required', 'string', 'email', Rule::unique('users', 'email')],
+            'email' => ['required', 'string', 'email', Rule::unique('users', 'email')->ignore(request('email'), 'email')],
             'password' => ['required', 'string'],
 
             "people.name" => ['required'],
@@ -40,7 +40,7 @@ class UserRequest extends FormRequest
             "people.address.*.neighborhoods" => ['required', 'string'],
             "people.address.*.country" => ['required', 'string'],
             "people.address.*.state" => ['required', 'string'],
-            "people.address.*.cep" => ['required', 'string', new FormatoCep],
+            "people.address.*.cep" => ['required', 'string'],
         ];
     }
 }

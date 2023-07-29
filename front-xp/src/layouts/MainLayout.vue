@@ -8,7 +8,7 @@
           DB-XP
         </q-toolbar-title>
 
-        <div>Danilo Developer v{{ $q.version }}</div>
+        <div>Danilo Developer</div>
       </q-toolbar>
     </q-header>
 
