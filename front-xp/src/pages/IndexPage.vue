@@ -172,22 +172,23 @@ function handleDialog(item) {
     row.value = item;
   } else {
     row.value = {
-      name: 'Danilo',
-      email: 'danilovsdanilo@gmail.com',
-      password: 'danilo123',
+      name: '',
+      email: '',
+      password: '',
       people: {
-        name: 'Danilo Veloso',
-        rg: '258477',
-        cpf: '52930157291',
-        birthday: '1991-08-30',
+        name: '',
+        rg: '',
+        cpf: '',
+        birthday: '',
         address: [
           {
-            cep: '69317-466',
-            country: 'Brasil',
-            state: 'Roraima',
-            neighborhoods: 'Av universo',
-            street: 'Cidade Satélite',
-            complement: 'complemenot'
+            cep: '',
+            country: '',
+            number: '',
+            state: '',
+            neighborhoods: '',
+            street: '',
+            complement: ''
           }
         ],
       }
