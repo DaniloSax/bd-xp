@@ -97,6 +97,9 @@ Certifique-se da variável FRONTEND_URL do .env está conforme a url do front, p
 </li>
 </ol>
 
+### PrintScreen da tela do sistema
+![N|Solid](./bdxp.png)
+
 ## Autor
 
 <a href="https://github.com/DaniloSax.png">
