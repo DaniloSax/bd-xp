@@ -5,7 +5,7 @@
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title>
-          DB-XP
+          BD-XP
         </q-toolbar-title>
 
         <div>Danilo Developer</div>
